@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="org.example.labjava02.StudentController"
+          alignment="CENTER" hgap="10" vgap="10">
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <Label text="ID: "/>
+        <ComboBox fx:id="txtIdDel" promptText="Elige un ID" onAction="#completarCamposEliminarAlumno">
+        </ComboBox>
+    </HBox>
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Label text="Nombre: "/>
+        <TextField fx:id="txtNombreDelAlumno" promptText="" disable="true"/>
+    </HBox>
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <Label text="Apellido: "/>
+        <TextField fx:id="txtApellidoDelAlumno" promptText="" disable="true"/>
+    </HBox>
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <Label text="E-mail: "/>
+        <TextField fx:id="txtEmailDelAlumno" promptText="" disable="true"/>
+    </HBox>
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <Label text="BootCamp: "/>
+        <TextField fx:id="txtBootDelAlumno" promptText="" disable="true"/>
+    </HBox>
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="5">
+        <Button fx:id="btnDelAlumno" onAction="#eliminarAlumno" text="Eliminar alumno" prefWidth="150"/>
+        <Button fx:id="btnDelSalir" onAction="#Salir"  text="Salir" prefWidth="150"/>
+    </HBox>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="6">
+        <Button fx:id="ActualizarEliminarAlumno" onAction="#actualizarEliminarAlumno" text="Actualizar datos" prefWidth="150"/>
+    </VBox>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="7">
+        <Label text="Datos del alumno: "/>
+        <TextArea fx:id="txtDatosDelAlumno" prefWidth="200" prefHeight="200" editable="false"/>
+    </VBox>
+</GridPane>

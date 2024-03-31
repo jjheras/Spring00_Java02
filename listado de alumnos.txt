@@ -1,0 +1,3 @@
+id,1:nombre,Carmen:apellidos,Heredia:email,carmen@live.com:bootcamp,FrontEnd
+id,2:nombre,Jose:apellidos,Heras:email,Jose@hotmail.com:bootcamp,BackEnd
+id,3:nombre,Jorge:apellidos,Granizo:email,Jorge@hotmail.com:bootcamp,DevOps
